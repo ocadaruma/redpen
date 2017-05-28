@@ -1,13 +1,26 @@
 {
   "name": "redpen",
   "scripts": {
+    "build": "webpack --colors --config ./webpack.config.dev.js",
+    "build:prod": "webpack --config ./webpack.config.prod.js",
     "test": "karma start js/karma.conf.js --browsers PhantomJS"
   },
   "devDependencies": {
-    "phantomjs-prebuilt": "^2.1.4",
-    "jasmine-core" : "^2.2.0",
+    "@types/enzyme": "2.8.0",
+    "@types/react": "15.0.22",
+    "@types/react-dom": "15.5.0",
+    "@types/react-redux": "4.4.39",
+    "enzyme": "2.8.2",
+    "jasmine-core": "^2.2.0",
     "karma": "~1.2.0",
     "karma-jasmine": "^0.3.8",
-    "karma-phantomjs-launcher": "~1.0.1"
+    "karma-phantomjs-launcher": "~1.0.1",
+    "phantomjs-prebuilt": "^2.1.4",
+    "react": "15.5.4",
+    "react-bootstrap": "^0.30.10",
+    "react-dom": "15.5.4",
+    "ts-loader": "2.0.3",
+    "typescript": "2.2.2",
+    "webpack": "2.4.1"
   }
 }
